@@ -4,7 +4,11 @@ const SearchBox = ({ searchfield, searchChange }) => {
 	return (
 		<div className='pa2'>
 			<input
-				style={{borderRadius: '15px'}}
+				style={{
+					borderRadius: '15px',
+					outline: 'none',
+					textAlign: 'center'
+				}}
 				className='pa3 ba b--green bg-lightest-blue'
 				type='search'
 				placeholder='search robots'

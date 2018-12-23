@@ -1,7 +1,3 @@
----
-permalink: /index.html
----
-
 # robofriends
 
-simple react app, which searches robots by their name. Great component templates for other projects.
+Simple app based on React and Redux state management. Data of robots are fetched from external API. Great template for other projects.

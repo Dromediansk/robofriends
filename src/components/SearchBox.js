@@ -9,6 +9,7 @@ const SearchBox = ({ searchfield, searchChange }) => {
 					outline: 'none',
 					textAlign: 'center'
 				}}
+				aria-label='Search Robots'
 				className='pa3 ba b--green bg-lightest-blue'
 				type='search'
 				placeholder='search robots'

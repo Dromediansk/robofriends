@@ -22,22 +22,22 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/21</span>
+        <span class='fraction'>0/12</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/2</span>
+        <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/7</span>
+        <span class='fraction'>0/5</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/21</span>
+        <span class='fraction'>0/12</span>
       </div>
     </div>
   </div>
@@ -73,36 +73,10 @@
 28
 29
 30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+31</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -126,39 +100,16 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React, { Component } from 'react';</span>
 <span class="cstat-no" title="statement not covered" >import { connect } from 'react-redux';</span>
-<span class="cstat-no" title="statement not covered" >import CardList from '../components/CardList';</span>
-<span class="cstat-no" title="statement not covered" >import SearchBox from '../components/SearchBox';</span>
-<span class="cstat-no" title="statement not covered" >import Scroll from '../components/Scroll';</span>
-<span class="cstat-no" title="statement not covered" >import ErrorBoundry from '../components/ErrorBoundry';</span>
-<span class="cstat-no" title="statement not covered" >import Header from '../components/Header';</span>
-<span class="cstat-no" title="statement not covered" >import './App.css';</span>
-&nbsp;
 <span class="cstat-no" title="statement not covered" >import { setSearchField, requestRobots } from '../actions';</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >import MainPage from '../components/MainPage';</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >import './App.css';</span>
 &nbsp;
 const mapStateToProps = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >state</span> =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >	return {</span>
@@ -177,30 +128,10 @@ const mapDispatchToProps = (<span class="cstat-no" title="statement not covered"
 }
 &nbsp;
 class App extends Component {
-<span class="fstat-no" title="function not covered" >	componentDidMount</span>() {
-<span class="cstat-no" title="statement not covered" >		this.props.onRequestRobots();</span>
+<span class="fstat-no" title="function not covered" >	render</span>() {
+<span class="cstat-no" title="statement not covered" >		return &lt;MainPage { ...this.props } /&gt;</span>
 	}
-&nbsp;
-<span class="fstat-no" title="function not covered" >	render</span>() <span class="cstat-no" title="statement not covered" >{</span>
-		const { searchField, onSearchChange, robots, isPending } = <span class="cstat-no" title="statement not covered" >this.props;</span>
-		const filteredRobots = <span class="cstat-no" title="statement not covered" >robots.filter(<span class="fstat-no" title="function not covered" >robot</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >			return robot.name.toLowerCase().includes(searchField.toLowerCase());</span>
-		})
-<span class="cstat-no" title="statement not covered" >		return isPending ?</span>
-		&lt;h1&gt;Loading&lt;/h1&gt; :
-		(
-			&lt;div className='tc'&gt;
-				&lt;Header /&gt;
-				&lt;SearchBox searchChange={onSearchChange}/&gt;
-				&lt;Scroll&gt;
-					&lt;ErrorBoundry&gt;
-						&lt;CardList robots={filteredRobots}/&gt;
-					&lt;/ErrorBoundry&gt;
-				&lt;/Scroll&gt;
-			&lt;/div&gt;
-			);
-			}
-		}
+}
 &nbsp;
 export default connect(mapStateToProps, mapDispatchToProps)(App);</pre></td></tr>
 </table></pre>
@@ -208,7 +139,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(App);</pre></td></tr
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Jan 04 2019 10:09:40 GMT+0100 (Stredoeurópsky čas (normálny))
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Jan 05 2019 15:02:28 GMT+0100 (Stredoeurópsky čas (normálny))
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

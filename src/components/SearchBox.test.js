@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import React from 'react';
-import Searchbox from './Searchbox';
+import SearchBox from './SearchBox';
 
 it('expect to render Searchbox component', () => {
-	expect(shallow(<Searchbox />)).toMatchSnapshot();
+	expect(shallow(<SearchBox />)).toMatchSnapshot();
 })

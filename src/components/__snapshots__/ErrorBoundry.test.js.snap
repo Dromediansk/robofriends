@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`expect to render Scroll component 1`] = `
+exports[`renders ErrorBoundry correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Scroll />,
+  Symbol(enzyme.__unrendered__): <ErrorBoundry />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -13,39 +13,9 @@ ShallowWrapper {
     "simulateEvent": [Function],
     "unmount": [Function],
   },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": undefined,
-      "style": Object {
-        "border": "1px solid black",
-        "height": "500px",
-        "overflowY": "scroll",
-      },
-    },
-    "ref": null,
-    "rendered": null,
-    "type": "div",
-  },
+  Symbol(enzyme.__node__): undefined,
   Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": undefined,
-        "style": Object {
-          "border": "1px solid black",
-          "height": "500px",
-          "overflowY": "scroll",
-        },
-      },
-      "ref": null,
-      "rendered": null,
-      "type": "div",
-    },
+    undefined,
   ],
   Symbol(enzyme.__options__): Object {
     "adapter": ReactSixteenAdapter {
@@ -71,5 +41,6 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;
